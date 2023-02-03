@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J3pWOCiNkqpGV3oupvruZ0cCe8i9xfSdaODdSlkczYKQk6G9XjvFwsya8iHDIorxtgZZqB5JfaFN6UpLBLcFPg==",
+  "dgSpecHash": "1OeoLnx62EAp/V5sRg6OeUM33MephbvsrlcP3YKwsIsKA7SvWRpBWHhOeuXXn/H9Duge9zmyL7LhJaDRS/ujyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\web\\Cametto\\Cametto\\Cametto.csproj",
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\Cametto\\Cametto\\Cametto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

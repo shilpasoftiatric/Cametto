@@ -10651,11 +10651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\web\\Cametto\\Cametto\\Cametto.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Cametto\\Cametto\\Cametto.csproj",
       "projectName": "Cametto",
-      "projectPath": "C:\\Users\\user\\source\\repos\\web\\Cametto\\Cametto\\Cametto.csproj",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\Cametto\\Cametto\\Cametto.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\web\\Cametto\\Cametto\\obj\\",
+      "outputPath": "C:\\Users\\user\\Source\\Repos\\Cametto\\Cametto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
