@@ -1,0 +1,47 @@
+﻿@model Registration
+@{
+    ViewData["Title"] = "Register";
+}
+
+<html>
+<head>
+</head>
+<body>
+    <form method="post">
+
+        <h2>Registration Form</h2>
+        <br /><br />
+        <div class="form-group">
+            @Html.LabelFor(model=>model.UserName, new{@class="control-label col-md-2"})
+            <input type="text" asp-for="@Model.UserName" />
+            @Html.ValidationMessageFor(Model=>Model.UserName,"",new{@class="text-danger"})
+        </div>
+        <br /><br />
+        <div class="form-group">
+            @Html.LabelFor(model=>model.Password, new{@class="control-label col-md-2"})
+            <input type="password" asp-for="@Model.Password" />
+            @Html.ValidationMessageFor(Model=>Model.Password,"",new{@class="text-danger"})
+        </div>
+        <br /><br />
+        <div class="form-group">
+            @Html.LabelFor(model=>model.Email, new{@class="control-label col-md-2"})
+            <input type="text" asp-for="@Model.Email" />
+            @Html.ValidationMessageFor(Model=>Model.Email,"",new{@class="text-danger"})
+        </div>
+        <br /><br />
+        <div class="form-group">
+            @Html.LabelFor(model=>model.PhoneNumber, new{@class="control-label col-md-2"})
+            <input type="text" asp-for="@Model.PhoneNumber" />
+            @Html.ValidationMessageFor(Model=>Model.PhoneNumber,"",new{@class="text-danger"})
+        </div>
+        <br /><br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button class="btn btn-primary" type="submit">Create</button>
+                <br />
+                <a asp-action="Index" asp-controller="Register">Back To List</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

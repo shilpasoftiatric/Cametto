@@ -1,0 +1,41 @@
+﻿@model List<Registration>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-4">
+    <div class="row p-3">
+        <div class="col-6">
+            <h2>Registration Form</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a class=" btn btn-primary" asp-action="Register" asp-controller="Register"><i class="bi bi-plus-circle"></i>&nbsp;Add New Registration</a>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>Registration ID</th>
+            <th>UserName</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>PhoneNumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.RegisterId</td>
+                <td>@item.UserName</td>
+                <td>@item.Password</td>
+                <td>@item.Email</td>
+                <td>@item.PhoneNumber</td>
+            </tr>
+
+        }
+    </tbody>
+</table>

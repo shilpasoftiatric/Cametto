@@ -1,0 +1,40 @@
+﻿@model BillerViewModel
+
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<html>
+<head>
+    <script src="~/content/scripts/jquery-3.6.1.js"></script>
+</head>
+<body>
+    <div class="form-group">
+        @for (var i = 0; i < Model.FoodItemList.Count; i++)
+        {
+            <table id="tblFood">
+                <tr>
+                    <td>
+                        @Html.CheckBoxFor(model => model.FoodItemList[i].IsSelected,new {Style ="vertical-align:3px}"})
+                        @Html.HiddenFor(model=>model.FoodItemList[i].Id)
+                        @Html.HiddenFor(model=>model.FoodItemList[i].Item)
+                        @Html.DisplayFor(model=>model.FoodItemList[i].Item)
+                        @Html.HiddenFor(model=>model.FoodItemList[i].price)
+                        @Html.DisplayFor(model=>model.FoodItemList[i].price, new { id="txtPrice",name="CheckSession" })
+                        <img src="@Model.FoodItemList[i].Image" width="50" height="50" />
+                        @Html.ValidationMessageFor(Model=>Model.FoodItemList[i].IsSelected,"",new{@class="text-danger"})
+                    </td>
+                </tr>
+
+            </table>
+
+
+        }
+    </div>
+</body>
+</html>
+
+
+

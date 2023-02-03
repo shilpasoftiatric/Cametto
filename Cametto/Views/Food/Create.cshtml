@@ -1,0 +1,39 @@
+﻿@model List<FoodItem>
+
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<html>
+<head>
+    <script src="~/content/scripts/jquery-3.6.1.js"></script>
+</head>
+<body>
+    <div class="form-group">
+        @foreach (var item in Model)
+        {
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"
+                       name="IsSelected"
+                       value="@item.Item" /> @item.Item
+                </label>
+                <input type="text" value="@item.price" id="txtPrice" name="checksession" class="form-control" />
+
+                <img src="@item.Image" width="50" height="50" asp-append-version="true" class="rounded-circle" />
+
+            </div>
+
+        }
+
+
+
+
+    </div>
+</body>
+</html>
+
+
+
